@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D' Tech Engineering</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+</head>
+<body>
+  <section id="header">
+    <div class="container">
+      <nav>
+        <div>
+          <h1><span>D'</span>Tech</h1>
+        </div>
+
+        <ul id="sideMenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#benefit">Benefits</a></li>
+          <li><a href="#service">Details</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="bi bi-x" onclick="closeMenu()"></i>
+        </ul>
+        <i class="bi bi-list" onclick="openMenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <p>
+          Unlock Your Coding Potential with 
+        </p> 
+        <h1>
+          <span>D'</span>Tech Engineering Africa Limited.
+        </h1>
+        <a href="#contact">CONTACT US</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== BENEFITS ========= -->
+
+  <section id="benefit">
+    <div class="container">
+      <h1 class="sub-title">Program Benefits</h1>
+      <div class="benefit-row">
+        <ol>
+          <li class="list-title">Live/Online Training Workshop</li>
+          <ul>
+            <li>
+              Experience dynamic training sessions from industry experts.
+            </li>
+            <li>
+              100% virtual with live lead instructor.
+            </li>
+          </ul>
+          <li class="list-title">Free Video Recording</li>
+          <ul>
+            <li>
+              Access recorded sessions for future reference and reinforcement anytime and anywhere.
+            </li>
+          </ul>
+          <li class="list-title">Free Mentorship and Consultation for Participants</li>
+          <ul>
+            <li>
+              Receive personalized guidance and consultation to enhance your learning journey
+            </li>
+          </ul>
+          <li class="list-title">Certification of Program completion</li>
+          <ul>
+            <li>
+              Showcase your skills with a certification upon successful completion of the program.
+            </li>
+          </ul>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== PROGRAM DETAILS ============= -->
+
+  <section id="service">
+    <div class="container">
+      <h1 class="sub-title">Program Details</h1>
+      <div class="work-list">
+        <div>
+          <p><span>Duration :</span> Three Weeks</p>
+          <p><span>Format :</span> Online Training Workshop</p>
+          <p>
+            <span>Sessions :</span> Morning and Evening
+          </p>
+          <p>
+            <span>Frequency :</span> Three Times Per Week
+          </p>
+          <p><span>Duration Per Session :</span> 2 Hours</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REGISTRATION ============= -->
+
+  <section id="register">
+    <div class="container">
+      <h1 class="sub-title">Registration</h1>
+      <p>
+        Register Today and Dive into the World of Web Development
+      </p>
+      <div class="work-list">
+        <div>
+          <h2 style="font-size: 25px;">
+            Cost Price - <span>&#8358;50,000</span>
+          </h2>
+          <h3>Account Details</h3>
+          <p><span>Bank :</span> Opay Digital Service</p>
+          <p><span>Account Number :</span> 6101068970</p>
+          <p>
+            <span>Account Name :</span> D'Tech Engineering Africa Limited
+          </p>
+
+          <h4>
+            Please send the payment receipt to the contact details below, to be given access to the group link for the virtual training.
+          </h4>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============== -->
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Get In Touch</h1>
+          <p><i class="bi bi-envelope"></i> dtechengineering.africa@gmail.com</p>
+          <p><i class="bi bi-telephone"></i> +234 8039565803</p>
+          <p><i class="bi bi-telephone"></i> +234 8132208451</p>
+
+          <div class="social-icons">
+            <a href="https://twitter.com/davidchigbo250" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/DTechSkills" target="_blank"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <label style="font-size: 13px;">Indicate your session and phone number in the box</label>
+            <textarea name="message" rows="6" 
+            placeholder="Your Message">
+            </textarea>
+
+            <button class="btn" type="submit">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <p style="margin-top: 40px; text-align: center;">
+        **Empowering Futures, Engineering Excellence**
+      </p>
+    </div>
+
+    <div class="copyright">
+      <p>&#169; 2023 Austin Okebata. All rights reserved </p>
+    </div>
+  </section>
+
+
+
+
+<!-- ========= SIDE BAR JAVASCRIPT ======== -->
+
+  <script>
+    let sideMenu = document.querySelector("#sideMenu");
+
+    function openMenu(){
+      sideMenu.style.right = "0";
+    }
+
+    function closeMenu(){
+      sideMenu.style.right = "-200px";
+    }
+  </script>
+
+  <!-- ========= GOOGLE SHEET SCRIPT ====== -->
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxDzSXh8-uKrRuoWf2rU0nHvdKPJSxNKv9Cxrg3NHzQyHG129XsYJQxwSJ0iKUliHkE/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.querySelector("#msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },3000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
